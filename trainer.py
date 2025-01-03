@@ -4,8 +4,6 @@ import torch
 import torch.optim as optim
 import numpy as np
 
-
-
 class Trainer(BaseTrainer):
 
     def __init__(self, objective, R, c, nu: float, optimizer_name: str = 'adam', lr: float = 0.001, n_epochs: int = 150,

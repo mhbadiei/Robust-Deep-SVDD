@@ -6,18 +6,12 @@ import numpy as np
 import pandas
 import csv
 import sys
-
 import math
-
 from utils.config import Config
 from utils.visualization.plot_images_grid import plot_images_grid
 from deepSVDD import DeepSVDD
 from datasets.main import load_dataset
 
-
-################################################################################
-# Settings
-################################################################################
 @click.command()
 @click.argument('dataset_name', type=click.Choice(['mnist', 'cifar10']))
 @click.argument('net_name', type=click.Choice(['mnist_LeNet', 'cifar10_LeNet', 'cifar10_LeNet_ELU', 'mine_net2', 'NET3', 'mine_net4', 'mine_net5', 'mine_sp']))

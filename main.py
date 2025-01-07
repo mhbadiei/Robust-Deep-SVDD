@@ -19,12 +19,7 @@ from datasets.main import load_dataset
 @click.argument('data_path', type=click.Path(exists=True))
 @click.option('--load_config', type=click.Path(exists=True), default=None,
               help='Config JSON-file path (default: None).')
-              
-#@click.option('--test_path', type=click.Path(exists=True), default=None,
-#              help='Test file path.')              
-#@click.option('--train_path', type=click.Path(exists=True), default=None,
-#              help='Test file path.')              
-              
+               
 @click.option('--load_model', type=click.Path(exists=True), default=None,
               help='Model file path (default: None).')
 @click.option('--objective', type=click.Choice(['one-class', 'soft-boundary']), default='one-class',
